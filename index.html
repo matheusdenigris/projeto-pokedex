@@ -13,17 +13,33 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/scrollbar.css">
+    <!--comittar no git o nove ícone do site-->
+    <link rel="shortcut icon" href="./src/images/pokeball.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <a href="https://www.pokemon.com/br/" target="_blank">
+        <div id="profile-button">
             <img src="./src/images/pokeball.png" alt="pokeball" class="logo">
+        </div>
+        <a href="https://www.pokemon.com/br/" target="_blank">
+            <img src="./src/images/letreiro-pokemon.png" alt="Pokémon" class="pokemon-label">
         </a>
         <button id="change-button-theme">
             <img src="./src/images/sun.png" alt="sun-image" class="button-image">
         </button>
     </header>
     <main>
+        
+        <div id="profile-box">
+            <img src="./src/images/charmander.gif" alt="Foto de Perfil">
+            <h2>Nome do treinador</h2>
+            <ul>
+              <li><strong>Pokémon favorito:</strong> Charmander</li>
+              <li><strong>Região:</strong> Kanto</li>
+              <li><strong>Pokémons capturados:</strong> 27</li>
+            </ul>
+          </div>
+
         <ul class="pokemon-list">
             <li class="poke-card">
                 <div class="info">
@@ -166,24 +182,22 @@
 
             <li class="poke-card">
                 <div class="info">
-                    <span>ARONE</span>
+                    <span>caterpie</span>
                     <span>#010</span>
                 </div>
 
-                <img src="./src/images/ARONE.gif" alt="Arone-gif" class="gif"
-                id="Arone-gif">
+                <img src="./src/images/caterpie.gif" alt="Caterpie-gif" class="gif">
 
                 <ul class="types">
-                    <li class="cria type">Cria</li>
-                    <li class="morumbi type">Morumbi</li>
+                    <li class="bug type">Bug</li>
                 </ul>   
 
-                <p class="description">Tourette syndrome dominates his body. He has powerfull atacks like &apos;TEY TEY&apos; and &apos;RIRIIII&apos;</p>
+                <p class="description">For protection, it releases a horrible stench from the antenna on its head to drive away enemies.</p>
             </li>
         </ul>
     </main>
     <footer>
-
+        <p>© 2023 Matheus De Nigris</p>
     </footer>
 
     <script src="./src/js/index.js"></script>

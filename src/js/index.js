@@ -13,3 +13,14 @@ changeButtonTheme.addEventListener("click", () => {
     changeButtonImageTheme.setAttribute("src", "./src/images/moon.png");
   }
 });
+
+const profileBox = document.getElementById("profile-box");
+const profileButton = document.getElementById("profile-button");
+
+profileButton.addEventListener('click', () => {
+  if (profileBox.style.left === '-300px') {
+    profileBox.style.left = '0';
+  } else {
+    profileBox.style.left = '-300px';
+  }
+});

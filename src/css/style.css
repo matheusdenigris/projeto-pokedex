@@ -30,9 +30,15 @@ header #change-button-theme{
 
 header .logo:hover,
 header .button-image:hover,
+header .pokemon-label:hover,
 main .poke-card:hover{
     transform: scale(1.10);
     cursor: pointer;
+}
+
+header .pokemon-label{
+    width: 160px;
+    transition: 0.2s ease-in-out;
 }
 
 main{
@@ -56,10 +62,6 @@ main .poke-card{
     gap: 15px;
     border-radius: 15px;
     transition: 0.2s ease-in-out;
-}
-
-main #Arone-gif{
-    width: 60px;
 }
 
 header .poke-card:hover{
@@ -118,12 +120,8 @@ main .poke-card .type{
     background-color: #3dc7ef;
 }
 
-.cria{
-    background-color: orangered
-}
-
-.morumbi {
-    background-color: blueviolet
+.bug{
+    background-color: #729f3f
 }
 
 main .description{
@@ -132,3 +130,16 @@ main .description{
     font-size: 14px;
     padding-right: 10px;
 }
+
+main #profile-box {
+    width: 300px;
+    height: 70vh;
+    background-color: rgb(100, 100, 100);
+    position: fixed;
+    top: 50%;
+    left: -300px;
+    transform: translate(0%, -50%);
+    transition: left 0.6s ease;
+    border-radius: 5%;
+    padding: 10px;
+  }
